@@ -1,6 +1,6 @@
 const clientId = '4b77e027f4ed472d9d47aaa694c6eafc';
-const redirect_uri = 'http://localhost:3000/';
-// const redirect_uri = 'https://rockerjammer.netlify.app/';
+//const redirect_uri = 'http://localhost:3000/';
+const redirect_uri = 'https://rockerjammer.netlify.app/';
 
 let token;
 
