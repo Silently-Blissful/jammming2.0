@@ -35,7 +35,7 @@ const Spotify = {
       console.log(networkError.message);
     }).then(jsonResponse => {
       if (!jsonResponse.tracks) {
-        return [{}];
+        return [];
       }
       return jsonResponse.tracks.items.map((track) => ({
         id: track.id,
