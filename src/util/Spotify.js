@@ -4,7 +4,7 @@ const redirect_uri = 'https://rockingjammmer.netlify.app/';
 
 let token;
 
-const Spotify ={
+const Spotify = {
   getAccessToken() {
     if(token) {
       return token;
@@ -35,7 +35,7 @@ const Spotify ={
       console.log(networkError.message);
     }).then(jsonResponse => {
       if (!jsonResponse.tracks) {
-        return [];
+        return [{}];
       }
       return jsonResponse.tracks.items.map((track) => ({
         id: track.id,
